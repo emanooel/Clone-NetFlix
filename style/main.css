@@ -1,3 +1,44 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: blue;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+
+header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*Estilizando o logo*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/*estilizando os links do menu*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/*estilizando os links do menu quando o mouse passa por cima*/
+header nav a:hover{
+    color: white;
 }
